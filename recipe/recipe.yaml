@@ -2,8 +2,8 @@ schema_version: 1
 
 context:
   name: mininterface
-  version: 1.0.2
-  python_min: 3.10
+  version: "1.0.3"
+  python_min: '3.10'
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/mininterface-${{ version }}.tar.gz
-  sha256: 9427b78c8b2120bc2425ae358b4fa2dd0f911cba1c006dd30f982966152ced92
+  sha256: 9efbccf33ff3ff44718700b368b58dd9db54a5f91935db45f5bd0b2748795416
 
 build:
   number: 0
