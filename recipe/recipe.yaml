@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: mininterface
-  version: "1.1.4"
+  version: "1.2.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/mininterface-${{ version }}.tar.gz
-  sha256: c51d1283c1d9b4aa03a9b13d2dd9f9d79edb8762d3742bc939b21ac88a22c8a7
+  sha256: 1f03ca165c561a6766e142a18628288bf9ead051e1595ae19b99ac9921ab24e4
 
 build:
   number: 0
@@ -52,7 +52,7 @@ tests:
 
 about:
   homepage: https://github.com/CZ-NIC/mininterface
-  summary: A minimal access to GUI, TUI, CLI and config
+  summary: "CLI & dialog toolkit – a minimal interface to Python application (GUI, TUI, CLI + config files, web)"
   license: LGPL-3.0-only
   license_file: LICENSE
   documentation: https://cz-nic.github.io/mininterface/Overview/
