@@ -7,7 +7,7 @@ Home: https://github.com/CZ-NIC/mininterface
 
 Package license: LGPL-3.0-only
 
-Summary: A minimal access to GUI, TUI, CLI and config
+Summary: CLI & dialog toolkit – a minimal interface to Python application (GUI, TUI, CLI + config files, web)
 
 Documentation: https://cz-nic.github.io/mininterface/Overview/
 
