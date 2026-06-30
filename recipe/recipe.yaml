@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: mininterface
-  version: "1.3.1"
+  version: "1.4.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/mininterface-${{ version }}.tar.gz
-  sha256: 6238de2d2fc488b5d452612ed0a5340c11b1137c788b159d8d1b9651d29dce90
+  sha256: 0ed57f57e45974211c8a4c82fe857e3fdc04152715ee5f7d42cb24f1e2fb3758
 
 build:
   number: 0
@@ -29,11 +29,11 @@ requirements:
     - python >=${{ python_min }}
     - simple-term-menu
     - annotated-types
-    # Include basica requirements (listed as optional upstream)
-    - tyro >=0.9,<0.10
+    # Include basic requirements (listed as optional upstream)
+    - tyro >=1.0.14,<1.0.15
     - pyyaml
     - humanize
-    - textual <2.0.0
+    - textual >=2.0.0,<9.0.0
     - tkinter-tooltip
     - tkinter_form ==0.2.1
     - tkscrollableframe
@@ -43,7 +43,9 @@ tests:
       imports:
         - mininterface
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
   - requirements:
       run:
         - python ${{ python_min }}.*
